@@ -4,7 +4,6 @@ import Swal from 'sweetalert2'
 const UpdateCoffee = () => {
 
     const coffee = useLoaderData();
-    console.log(coffee);
     const { _id, name, chef, taste, photo, supplier, category, details } = coffee;
 
     const handleUpdateCoffee = e => {
@@ -48,6 +47,7 @@ const UpdateCoffee = () => {
         <div className='lg:w-3/4 mx-auto'>
             <div className="text-center p-10">
                 <h1 className="text-5xl font-bold">Update Coffee! {name}</h1>
+                <img className='max-w-96 my-10 mx-auto' src={photo} alt="" />
                 <p className="py-6">
                     Provident cupiditate voluptatem et in.Quaerat fugiat ut assumenda excepturi exercitationem
                     quasi. In deleniti eaque aut repudiandae et a id nisi.
