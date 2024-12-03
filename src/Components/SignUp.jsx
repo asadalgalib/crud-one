@@ -22,7 +22,7 @@ const SignUp = () => {
                 const createdAt = result?.user?.metadata?.creationTime;
                 const newUser = { name, email, createdAt }
                 // save user info from database
-                fetch('http://localhost:5000/users', {
+                fetch('https://coffe-house-server-neon.vercel.app/users', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json'

@@ -14,7 +14,7 @@ const AddCoffee = () => {
         const photo = e.target.photo.value;
         const coffee = { name, chef, supplier, taste, category, details, photo }
 
-        fetch('http://localhost:5000/coffee', {
+        fetch('https://coffe-house-server-neon.vercel.app/coffee', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
